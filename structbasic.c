@@ -39,6 +39,6 @@ int main()
 	        printf("\nemployee designation : %s",emp.desig);
 		printf("\nemployee ctc : %f",emp.ctc);
 	}
-	}
+}
 	return 0;
 }

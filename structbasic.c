@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdint.h>
+uint32_t a;
 struct employee_database
 {
 	uint8_t name[10];

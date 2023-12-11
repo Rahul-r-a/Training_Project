@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdint.h>
+#include<stdint.h> // header added
 
 uint8_t i=0, j=0, size1=0, size2=0, size3=0, choice=0, arr1[7], str1[10], str2[5];
 

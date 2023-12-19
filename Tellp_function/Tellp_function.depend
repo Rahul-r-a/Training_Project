@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1702283422 source:/home/rahula/Desktop/rahul_project/Tellp_function/main.cpp
+	<iostream>
+	<fstream>
+

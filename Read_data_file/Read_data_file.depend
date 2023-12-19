@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1702282204 source:/home/rahula/Desktop/rahul_project/Read_data_file/main.cpp
+	<iostream>
+	<fstream>
+

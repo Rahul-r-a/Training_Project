@@ -1,0 +1,55 @@
+
+🌕️touch <filename.sh> : //CREATING A FILE IN BASH, THEN OPEN THE  FILE IN THE TEXT EDITOR
+🌕️#!/bin/sh :   // path where the script is written (#! = sharp exclamation or She-bang , for making the text file to executable file in linux based system)
+
+chmod +x <filename.sh> : THIS COMMAND PROVIDES EXECUTE PERMISSION TO THE GIVEN FILE. (the files are made executable using this command because initially the file will be having only read and write permsiion)
+
+./filename.sh : //ONCE THE FILE IS MADE EXECUTABLE RUN USING THIS COMMAND
+
+🌕️WE CAN USE VARIABLE TO ASSIGN A STRING AND $ TO ACCES IT : // name="rahul"(no space after or before = )
+                                                              echo "hello" $name  GIVES OUTPUT "hello rahul"
+                                                              
+🔸️read -p "text" var1 var2 .... : //Can be used to declare variables together with text
+🔸️sleep<number> : // Creates a delay for n seconds                                                              
+🔸️invalid variable names = 2_VAR , -VARIABLE , VAR1-VAR2 , VAR_A! (This is because ! * - have special meanings in shell scripting)
+🔸️After a variable is marked read-only, its value cannot be changed. (Ex : readonly VAR = 3 , then variable VAR cannot be accesse or cheanged again)     
+🔸️unset variable_name (Ex: NAME="RAHUL") : // A variable can be unset using the command 
+                                                                       unset NAME 
+                                                                       echo $NAME // will not give output RAHUL)
+🔸️-s : //silent mode (Ex: for not showing password while typing)                                                                       
+🌕️System Defined Variables
+ 🔸️$home, $pwd, $ls, $bash,  
+                                                                                                                          
+🌕️Special Variables 
+🔸️$0 = The filename of the current script.
+🔸️$n = This variable coresponds to the arguments invoked in the file
+🔸️$# = NUmber of arguments supplied to a script.
+🔸️$@ = double quote the values
+
+🌕️Arithmetic operation
+🔸️Arithmetic Operations must be given in double brackets  with $ outside the brackets
+🔸️** : // used to find the power of a number (EX : result=$((num1**num2)), num2=exponent, num1 = base)
+    
+                                                
+🌕️CONDITIONS : if, elif, while, for, untill   ://Ex= if ((some_condition)) 
+                                                  then
+                                                      Some action 
+                                                   elif
+                                                      Some byDefaultAction
+                                                    fi
+
+🔸️switch : (Ex:  case char in
+A)
+echo "TEXT";;
+B)
+echo "text";;
+C)
+echo  "text"
+*)
+echo "invalid charecter" 
+esac                                                 
+                                                    
+                                                    
+                                                            
+                                                           
+                                                           

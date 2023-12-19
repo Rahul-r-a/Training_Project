@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1702278864 source:/home/rahula/Desktop/rahul_project/Write_file_data/main.cpp
+	<iostream>
+	<fstream>
+

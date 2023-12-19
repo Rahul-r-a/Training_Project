@@ -1,0 +1,61 @@
+🌕️Your identification has been saved in /home/rahula/.ssh/id_ed25519
+Your public key has been saved in /home/rahula/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:lqxVsrGOHNXAOIijSHT4+USsM5Ea1/63PxstgeeNpSY rahul.a@ignitarium.com
+
+
+CODE FOR GITHUB:
+🌕️configuration of git : // git config --global user.name "rahula"
+ user details : git config --global user.email "rahulrohms007@gmail.com"
+
+git clone <copy repsitory url from github>  ://for placing the repository in desktop or document or anywhere
+git init : // creating or initialising a new project or empty repository
+
+
+🌕️
+type filename(Eg: vi array.c)
+git add .(allowsall files )
+git add <filename>(allows that particular file to our staging)
+git commit -m "comments"
+git push            // pushing to the global github repos
+
+git log : // TO KNOW HOW MANY COMMITS MADE AND THEIR COMMIT ID's
+git log --oneline : // TO GET ONLY THE SUBJECT OF THE COMMIT
+git log --all --decorate --graph : // DETAILS FULL COMMIT WE HAVE DONE SO FAR 
+git checkout <commit id > : // TO MOVE FROM ONE COMMIT ID TO ANOTHER
+git diff : // TELL US THE ADDITIONAL CONTENTS ADDED TO THE FILE
+git stash : // DELETE THE CONTENTS ADDED TO THE FILE BEFORE OR AFTER STAGING ALSO
+
+
+type username and token generated
+
+when any change is made in the file in the github site , to obtain the change in the desktop/training project use : git pull
+
+use "git restore --staged <file>..." to unstage
+
+
+
+FOR DELETING A FILE 
+1ST: remove locally from lap(rm filename)
+then add the file to get deleted from git hub : git add <filename>
+to know the status : git status(know about what has been staged and what has been modifiedetc)
+then : git commit --m "comment"
+then push the deletetion operation globally : git push
+
+git push --set-upstream origin new : //to push the current branch and set the remote as upstream
+
+for checking which is selected branch/main : git branch
+creating branch in github : git branch <branch name>
+
+to get into the branch : git checkout <branch name>
+
+for both creating and entering into a branch : git checkout -b <branchname>
+
+
+for merging changes created in branch : git merge <branch name> // do this after selecting main
+for merging changes in linear way that is at the end of the branch : git rebase <branchname>
+
+to select all files to be staged : git add-- all 
+
+git revert : // for undoing the git commit , here the commit id wont change . git revert will actaully create a seperate commit wich is exactly opposite to whichever commit u wish to undo.
+

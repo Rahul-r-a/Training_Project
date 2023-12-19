@@ -1,0 +1,80 @@
+🌕️REFERENCE : https://www.scaler.com/topics/linux-tutorial/linux-commands/
+
+clear : // for clearing the screen
+pwd(Print Working Directory) : // gives path of current directory working on.
+cd(Change Directory) : // Navigate to a specific directory.
+ls(list) : // List the contents in the directory.
+mkdir(Make Directory) : // For making a new folder or directory.
+rmdir(Remove Directory) : // For removing the folder or directory.
+
+* ://WILD CARD, can be used to remove,copy or move all files from a folder etc(Ex: cp *.* <foldername> will copy all files in the folder without extensions
+                                                                                    rm *.txt *.c <foldername> will remove all .txt extension files and all the .c extension files in the folder)
+🌕️mail [-s subject] [-c cc-addr] [-b bcc-addr] to-addr : // FOR SENDING MAIL
+(Ex : mail -s "Test Message" admin@yahoo.com )
+
+
+
+LINUX FILE COMMANDS🌕️
+mk(makefile) : // file making.
+rm(removeflie) : // removing file.
+touch : // For creating a new text file
+cp source destination(path) : // COPY FILES OR DIRECTORIES
+mv source destination(path)  : //TO MOVE O RENAME FILES
+
+FILE CONTENT COMMANDS🌕️
+cat <filename> : // TO KNOW WHAT IS INSIDE THE FILE
+more : // The more command in Linux is used to display the contents of a file page wise, one by one.
+less : // Display contents of the file and '/' helps to seach for words in a textfile (Ex : /<wordname>).
+head<filename> : // SHOW THE INITIAL LINES OF THE FILE
+tail<filename> : // COMMAND DISPLAYS FILES'S END
+wc <filename> : //WORDCOUNT.(
+
+    -l: Count and display the number of lines.
+    -w: Count and display the number of words.
+    -c: Count and display the number of characters.
+    -m: Count and display the number of characters (equivalent to -c).
+    -L: Display the length of the longest line.)
+    
+nl <filename> : // GIVES NUMBERS TO THE CODE
+
+🌕️grep "search_term" <filename> : // IDENTIFES A PARTICULAR WORD
+(Ex: ls -l | grep "Nov" : // Shows all the files on Nov)
+-v = Prints all lines that do not match pattern.
+-n = Prints the matched line and its line number.
+-l = Prints only the names of files with matching lines (letter "l")
+-c = Prints only the count of matching lines.
+-i = Matches either upper or lowercase.
+
+
+chmod <filename> : //CHANGE FILE PERMISSION
+
+TEXT EDITOR COMANDS🌕️:->
+insert for editing
+esc -> shift -> colon -> type commands
+q : // quiting
+wq : // save and quit
+
+gcc -c <filename> -o <anyname> : THIS WILL CREATE AN OBJECT FILE 
+gcc <filename.c> -o filename : //THIS WILL CONVERT THESOURCE CODE TO EXECUTABLE WITH NAME AS FILENAME GIVEN
+size <filename> : // THE SIZE COMMAND IS USED TO CHECK THE SIZES (IN BYTES) OF THESE DIFFERENT MEMORY SEGMENTS
+
+  
+    LINUX USER COMMANDS🌕️
+    whoami : // This command in Linux is used to display the current logged-in user
+    su(switch user) : // switching the current user to another user
+    useradd : // This command in Linux is used to create a new user account (Ex: useradd <name>)
+    passwd : //F or changing the password of the user (Ex: passwd <username>)
+    
+    LINUX FILTER COMMANDS🌕️
+    sort -n <filename> : // for sorting the contents in the file in ascending or descending order
+    uniq - The uniq command in Linux is used to display or remove adjoining duplicate lines from a sorted text file. 
+    
+🌕️FTP = file transfer protocol
+(Ex : ftp hostname or ip-address)
+The above command would prompt you for the login ID and the password. Once you are authenticated, you can access the home directory of the login account and you would be able to perform various commands.    
+Commands and Description :
+*put <filename> : Uploads filename from the local machine to the remote machine.
+*get <filename> : Downloads filename from the remote machine to the local machine.
+*dir        : list all the directories in the remote machine
+*quit : Helps logout from the current login.
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1702452117 source:/home/rahula/Desktop/rahul_project/MultiThreading/main.cpp
+	<iostream>
+	<thread>
+

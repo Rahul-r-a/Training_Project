@@ -1,0 +1,154 @@
+🌕️C++ SYNTAXES
+
+using namespace std: //we can use names for objects and variables from the standard library.
+
+endl :   // end of a line
+bool(1 byte) : //datatype for true/false statement
+string : //datatype for strings
+char   : // datatype for charecters
+
+cin >> : //instead of scanf in C(no need for &)
+
+INT_MAX : //FOR GETTING MAX VALUE THAT CAN BE STORED IN THE INTEGER
+INT_MIN : //FOR GETTING MIN VALUE THAT CAN BE STORED IN THE INTEGER
+
+#include<limits.h>
+#include<iomanip> : //stands for i/o manipulations
+
+<<setprecision : //for setting the number limit after decimal point for float(till the precision point it will be crrct value but after that there will be garbage value)
+if precision is above 7 then the value after decimal will be accurate upto 7 and later there will be garbage value(for "FLOAT"). But using "DOUBLE" can increase the accuracy ABOVE 7.
+using "LONG DOUBLE" will again increase the precision.
+By using SETPRECISION, you can ensure that the compiler does not round the floating-point value before it is printed to the console. This will result in more accurate and precise results.
+
+◾️bool : //for coditions true or false
+
+for array if we are intialising it, then there is no need for putting the size (Ex: int arr[]={0,1,2,3};)
+for array of strings, initialisation -> (Ex: string arr[] = {"apple","banana","orange"};)
+
+multidimensional array initialization -> (Ex: string arr[2][2] = {{"apple","orange"},{"is","good"}};)
+
+◾️sizeof string = 32byte
+Try to use uppercase in constant variables
+
+
+Rather then using numbers use references instead in loops (Ex: int k=0;
+                                                                char arr[];
+                                                                for(i=k;i<sizeof(arr);i++);
+                                                               ) 
+
+char arr[] = "hello" can be done
+
+🌕️CONCATINATION can be done by : // string1.append(string2)
+🔸️stringlength can be found by : // variable.length() or variable.size()
+🔸️comparing two strings by : // (var1.compare(var2)==0)
+🔸️Swapping strings : // (var1.swap(var2)
+
+🌕️string::npos : // End of the string
+🌕️var.find("word") : To find the word to be replaced
+🌕️var.replace(var.find("word"),size of word, word to replace)   (Ex : while(text1.find(var1) != string::npos)    
+                                                                       {
+                                                                       text1.replace(text1.find(var1), var1.length(),var2);} 
+
+🔸️Iterating words in string and replace : // var.find("type the word")
+Ex: while(var.("word") != string::pos)
+var.replace(var.find("word) ,length of the word , (replacing word));
+
+🌕️for inputing string with space we cant use cin instead use getline(cin,variablename)
+
+
+we can concatinate STRINGS with '+' but cannot concatinate INT to string without library
+ #include<sstream> and stringstream <anyname> in local space, we can do  .
+<anyname>.str() //CONVERTS IT INTO ACTUAL STRING
+
+🌕️structure : Ex: struct <datatype name>
+                  { int date
+                    string name};
+           Declaring variavle : // <datatype name> var1
+NOTE: we can assigne one variable to another variable like normally in structures
+                    
+
+Use '&' to change value of two variables by changing only one. (Ex: int valu1=5;
+  here &value2 is a referance to value1 so what and all             int &value2 = value1;
+  changes we make in value2 it will result in value1                value2 = 10;
+                                                                    the output will be value1=10
+                                                                                       value2=10
+                                                                     )
+CLASS in header files (.h) (Ex: class <name> {
+            public:
+            <function prototypes>
+            };            
+CLASS in app files (Ex: void <classname> :: prototypename(){
+                        function definitions;
+                        }
+ we can then use different classnames for same class to access 
+ (Ex: Cat jim;
+        jim.happy = true;
+        jim.speak();
+        jim.legs();
+
+        Cat bob;
+        bob.happy = false;
+        bob.speak();
+        bob.legs();
+   ) 
+   
+🌕️If Boolean variable is not initialized then it may contain garbage value (Ex : bool happy = true //if not initialised like this then it may take false)      
+🌕️Constructors doesnot have return value(Ex: ie no need for int,float,char etc befor function prototype). name of constructor is same as the CLASS NAME
+constructor Ex : function decleration inside class ie => class cat{
+                                                                   private : 
+                                                                             bool happy;
+                                                                   public :
+                                                                          void speak();
+                                                                          cat(); // same class name for constructor and destructor
+                                                                          }
+                 function definition => cat::cat() // no need for datatype since it is a constructor
+                                         {
+                                             happy = true;
+                                          }
+                                          void cat::speak()
+                                          {
+                                             if(happy)
+                                             {
+                                                cout << meaow;
+                                               }
+                                               else
+                                               {
+                                                cout << "sss";
+                                                }
+                                             
+🌕️Destructors are mainly for de allocating the memmory by destroying the class  at the end of the programme after the last line
+(Ex :in function definition cat::~cat()
+                               {
+                                 cout << "cat destroyed" << endl;
+                               }    
+                               
+🌕️clear buffer => ss.str("");  
+🌕️if same name of private variable is given in the argument function , then we can use pointer with keyword "this".
+(Ex :   this-> (variable name);)   
+
+🌕️Constructor initialization => (Ex : Person::Person(string name, int age):name(name), age(age)
+                                        {
+                                        }   in function definition
+                                        
+                                        or in function decleartation itself we can give
+                                        
+                                        Person(string name, int age):name(name), age(age){};
+{
+    
+}
+
+🌕️Dybamic Memory Allocation
+(Ex: int *p;
+     p = new int;        // Allocating the memory
+     *p = 10;            //dereferencing the memmory
+     delete p            // deallocating the memmory
+      *p = new int[20];  // allocating another memory for array of 20 blocks each of 4 bytes
+      delete[] p;        // Deallocating the memmory)
+                                                                                                 
+                                                                                                            
+                                                                     
+                                                                                       
+
+
+
+
